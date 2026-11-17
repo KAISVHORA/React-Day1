@@ -1,0 +1,940 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background: #f3f5f7;
+  color: #202124;
+}
+
+.dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dashboard-header,
+.welcome-panel,
+.module-card {
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: white;
+}
+
+.dashboard-header {
+  background: #202124;
+  color: white;
+}
+
+.module-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 16px;
+}
+
+.module-card {
+  margin-bottom: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.status-completed {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #a15c00;
+  font-weight: bold;
+}
+
+.dashboard-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .dashboard-header,
+  .welcome-panel,
+  .module-card {
+    padding: 16px;
+  }
+}
+
+.succcess{
+    color:green;
+
+}
+.error{
+    color:red;
+
+} */
+
+body {
+  max-width: 750px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.Profile-Card-one {
+  width: 400px;
+  height: 350px;
+  background-color: rgba(13, 7, 80, 0.998);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Profile-Card-one .profile {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Profile-Card-one .Profile-Card h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.Profile-Card-one .title-name {
+  font-size: 20px;
+  color: white;
+}
+
+.Profile-Card-one .text-name {
+  font-size: 18px;
+  color: white;
+}
+
+.Profile-Card-one .text-test {
+  background-color: rgb(175, 255, 175);
+  color: green;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+/* //Task 2 — Shopping bill calculator */
+
+.Bill-Card-Two {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px -20px;
+  border: 5px solid rgb(0, 14, 136);
+}
+
+.Bill-Card-Two .title {
+  color: white;
+}
+
+.Bill-Card-Two .cards {
+  width: 100%;
+  height: 800px;
+
+}
+
+.Bill-Card-Two li {
+  list-style: none;
+}
+
+.title-total {
+  background-color: rgb(189, 252, 189);
+  color: green;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 50px 0;
+  border: 5px solid rgb(0, 14, 136);
+}
+
+
+/* Task 3 — Student result card */
+
+.Result-Card-Three {
+  width: 100%;
+  background-color: rgb(254, 13, 13);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px -20px;
+  border: 5px solid rgb(0, 14, 136);
+}
+
+.Result-Card-Three .text-test {
+  background-color: rgb(175, 255, 175);
+  color: green;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.Cards-Four {
+  background-color: black;
+  max-width: 500px;
+  height: auto;
+  padding: 25px;
+  border-radius: 10px;
+  border: 5px solid rgb(255, 191, 0);
+}
+
+.Cards-Four .Course-Card-Four {
+  background-color: rgb(16, 40, 121);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Course-Card-Four .level-list {
+  background-color: coral;
+  padding: 3px;
+  display: block;
+  border: 5px solid rgb(255, 191, 0);
+}
+
+/* // Task 5 — Product availability */
+.Products-Card-Five {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  padding: 20px;
+  border: 5px solid red;
+  border-radius: 10px;
+}
+
+.available,
+.Unavailable {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.available {
+  color: green;
+  background-color: rgb(170, 249, 170);
+  border: 2px solid green;
+  display: inline-block;
+}
+
+.Out-of-Stock {
+  color: red;
+  background-color: rgb(249, 170, 170);
+  border: 2px solid red;
+  display: inline-block;
+  padding: 10px;
+}
+/* .profile-card-one */
+.profile-card-one{
+  background-color: rgb(167, 167, 4);
+  text-align: center;
+  width:300px;
+  margin:0 auto;
+  padding:10px;
+  border-radius: 10px;
+  border:3px solid red;
+}
+.profile-card-one h2{
+  color: rgb(0, 239, 195);
+  box-shadow: 1px 5px 5px red;
+}
+
+.profile-card-one article h3{
+  background-color:rgb(157, 157, 255);
+  padding:10px;
+  color: rgb(250, 1, 1);
+  border-radius: 10px;
+  border:3px solid red;
+}
+
+/* Dashboard container */
+
+.Mini-cards-six {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #0080ff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.Mini-cards-six h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+/* Dashboard number cards */
+.num-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.num-cards p {
+  background-color: #e0f2fe;
+  color: #075985;
+  padding: 15px 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Individual course cards */
+.cards-six {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  padding: 15px 18px;
+  margin-bottom: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  color: #1e293b;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards h3 {
+  color: #334155;
+  margin: 0;
+}
+
+/* Completed status */
+.completed {
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Pending status */
+.Pending {
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Mobile responsive */
+/* @media (max-width: 500px) {
+    .num-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        padding: 12px;
+    }
+}
+``` */
+.Appsite{
+  background-color: #92400e;
+  border: 5px solid yellow;
+  padding:10px;
+  text-align: center;
+}
+.Appsite article h2{
+  color:rgb(255, 13, 13);
+  background-color: #ffffff;
+  padding: 10px;
+}
+.click-group{
+  background-color: #e80505;
+  padding:10px;
+  text-align: center;
+  border: 2px solid black;
+  color:white;
+}
+
+/* greet-group */
+.greet-group{
+  background-color: #0080ff;
+  padding:10px;
+  text-align: center;
+  color:white;
+  border-radius: 10px;
+}
+
+/* // Group Task 1 — E-commerce product listing */
+.ProductsSix-Task-one {
+  background-color: rgb(24, 119, 18);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-one {
+  background-color: black;
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+.available {
+  color: green;
+  border: 2px solid green;
+  background-color: rgb(144, 255, 144);
+
+}
+
+.unavailable {
+  color: red;
+  background-color: rgb(255, 156, 156);
+  border: 2px solid red;
+  /* display: block; */
+  margin: 10px;
+}
+
+
+/* 2 — Student directory */
+
+
+.Profile-Task-one {
+  border: 5px solid red;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.skills {
+  background-color: rgb(157, 241, 0);
+  padding: 10px;
+  gap: 5px;
+  font-weight: 600;
+}
+
+/* // Group Task 3 — Result dashboard */
+.Dashboard-Cards-seven {
+  background-color: rgb(3, 0, 90);
+  border-radius: 10px;
+}
+
+.student-seven {
+  border: 2px solid rgb(249, 212, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pass {
+  background-color: green;
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.fail {
+  background-color: red;
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Task 1 — Reusable Profile Card */
+.title-content {
+  border: 2px solid red;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.Profile-cards {
+  width: 800px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.student-card {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* Task 2 — Course Card */
+.One-Cards {
+  width: 800px;
+  background-color: #a8bbce;
+  margin: 10px;
+  text-align: center;
+  /* padding:10px; */
+  border-radius: 10px;
+}
+.One-Cards h1{
+  color:#e80707;
+  padding:10px;
+}
+.Cards-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.C-Cards {
+  background-color: rgb(149, 71, 42);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border:5px solid rgb(239, 223, 223);
+}
+
+.Published {
+  background-color: rgb(145, 251, 145);
+  color: green;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Not-published {
+  background-color: rgb(255, 155, 155);
+  color: red;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+/* Task 3 — Skills List */
+.skill-cards {
+  background-color: #075985;
+  width: 800px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Skill-Cards {
+  color: whitesmoke;
+  background-color: #166534;
+  text-align: center;
+  padding: 10px;
+  border: 5px solid greenyellow;
+}
+
+.skill-item li {
+  list-style-type: none;
+  color: white;
+  padding: 10px 0;
+}
+
+
+
+/* Task 4 — Reusable Panel */
+.panel {
+  width: 760px;
+  background-color: #003f61;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: rgb(255, 0, 0);
+}
+
+.panel-content {
+  color: yellow;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: darkgoldenrod;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin:10px;
+}
+
+.external-group {
+  width: 800px;
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.external-group h1{
+  text-align: center;
+  border: 2px solid white;
+  display: inline-block;
+  padding:10px;
+  border-radius: 10px;
+}
+ 
+.ul-learn li{
+  list-style-type: none;
+  padding: 10px;
+}
+.panel{
+  border: 2px solid white;
+}
+
+/* kaisin */
+.Train{
+  background-color: #1c2428;
+  text-align: center;
+  padding:10px;
+  color:#00D8FF;
+  border:3px solid #00D8FF;
+  border-radius:10px;
+}
+/* list-cards */
+
+.list-cards-two, .list-cards{
+  background-color: #1c2428;
+  text-align: center;
+  padding:10px;
+  color:#00D8FF;
+  border:3px solid #00D8FF;
+  border-radius:10px;
+
+}
+.topic-group{
+  background-color: red;
+  color: white;
+    padding:10px;
+    border-radius: 10px;
+}
+.topic-group h2{
+  text-align: center;
+}
+.total-price{
+  background-color: green;
+  text-align: center;
+  color:white;
+  padding:10px;
+  border-radius: 10px;
+}
+.kaisin{
+  background-color: #06677b;
+  text-align: center;
+  padding:5px;
+  border-radius: 10px;
+  color:white;
+
+}
+.kaisin p{
+  color:yellow;
+  font-size: 20px;
+  text-decoration:underline;
+}
+/* Question 29 — Personal Profile Card */
+.Cards {
+  background-color: #1e293b;
+  padding: 10px;
+  border: 5px solid yellow;
+  border-radius: 10px;
+  color: rgb(253, 249, 1);
+}
+
+.Num {
+  background-color: rgb(175, 245, 183);
+  border: 2px solid green;
+  color: green;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.group h1{
+  text-align: center;
+  background-color: #000000;
+  padding:10px;
+  border-radius: 30px 0 30px 0;
+  border: 3px solid white;
+}
+
+/* //Question 30 — Course Catalogue */
+
+
+.Like,
+.Unlike,
+.enrolled {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.Like {
+  background-color: rgb(175, 245, 183);
+  border: 2px solid green;
+  color: green
+}
+
+.Unlike {
+  background-color: rgb(250, 187, 187);
+  color: red;
+  border: 2px solid red;
+}
+
+.Course-cards {
+  background-color: #075985;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 5px solid red;
+}
+
+.number {
+  color: rgb(248, 149, 0);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+
+/* // Question 31 — Reusable Panel */
+.group-panel {
+  background-color: rgb(207, 250, 142);
+  border: 5px dotted blueviolet;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Panel-K {
+  text-align: center;
+}
+
+.title-content h2 {
+  color: red;
+}
+
+.title-content p {
+  color: rgb(0, 55, 255);
+}
+
+
+/* Question 32 — Component Refactoring */
+.Apps1 {
+  background-color: black;
+}
+
+.header {
+  background-color: #075985;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  color: yellow;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: red;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #075985;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.student-card h2{
+  color:rgb(0, 255, 195);
+}
+.student-card p{
+  color:white;
+}
+
+/* Group Task 1 — Student Directory */
+.Appf{
+  background-color:#0080ff;
+  padding:10px;
+  border-radius:10px;
+}
+.border{
+  border:2px solid white;
+  padding:10px;
+  border-radius:10px;
+}
+.student-cards{
+  background-color: #000000;
+  border-radius: 10px;
+  border:2px solid white;
+  color:yellow;
+  padding:10px;
+  text-align: start;
+}
+.Footers{
+  color:white;
+  text-align: center;
+}
+.border h1, p{
+  text-align: center;
+  color:white;
+}
+
+
+/* Course-Catalogue */
+.course-card{
+  background-color: #166534;
+  border:5px solid yellowgreen;  
+  margin:5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+.course-list{
+  background-color: #075985;
+  padding:10px;
+  border-radius: 10px;
+}
+.course-card h2{
+  color:yellowgreen;
+}
+.enrolled{
+  background-color: rgb(250, 187, 187);
+  color: red;
+  border: 2px solid red;
+}
+header {
+  text-align: center;
+}
+header p {
+  color:black;
+}
+
+
+
+
+/* products-cards */
+.products-cards{
+  background-color: #ba0808;
+  border-radius: 10px;
+  text-align: center;
+  width:800px;
+  display: flex;
+  padding:10px;
+  gap:10px;
+}
+.products-cards article{
+  width:33%;
+  background-color: #003f61;
+  border-radius: 10px;
+ 
+}
+.products-cards article h1{
+  color:rgb(6, 224, 253);
+}
+.products-cards article span{
+  color:orange;
+  font-size: 14px;
+  background-color: rgb(13, 13, 13);
+  padding:10px;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+.availables{
+  background-color: rgb(202, 255, 202);
+  color:green;
+  padding:5px;
+  border:2px solid green;
+}
+.unavailables{
+  background-color: rgb(255, 202, 202);
+  color:red;
+  padding:5px;
+  border:2px solid red;
+}
+
+
+/* Footer-one */
+.Footer-one{
+  background-color: #003f61;
+  padding:15px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color:white;
+  border-radius: 10px 10px 0 0;
+  margin:10px 0;
+}
+
+/* 1.1jsx */
+.Header-one{
+  background-color: rgb(255, 231, 231);
+  box-shadow: 0px 1px 10px black;
+  padding:10px;
+  margin:5px 0;
+}
+.Welcome-two{
+   background-color: rgb(255, 231, 231);
+  border: 2px solid black;
+  text-align: center;
+  padding:10px;
+}
+.Welcome-two h2{
+  color:red;
+}
+.Welcome-two P{
+  color:rgb(35, 0, 230);
+  font-size: 15px;
+}
+.Learning-three{
+  background-color: #003f61;
+  padding:10px;
+  border-radius: 0 0 20px 20px;
+}
+.Learning-three h2{
+  color:yellow;
+  text-align: center;
+}
+.Learning-three ul li{
+  color:white;
+  text-align: center;
+  padding: 5px;
+}
+.Learning-footer p{
+  background-color: rgb(255, 231, 231);
+  box-shadow: 0px 1px 10px black;
+  padding:10px;
+  margin:5px 0;
+  color:#000000;
+  border-radius: 20px 20px 0 0;
+}
