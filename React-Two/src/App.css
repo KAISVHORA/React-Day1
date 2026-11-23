@@ -1,0 +1,279 @@
+/* body{
+    max-width:800px;
+    margin: 0 auto;
+} */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.count-G,
+.name-G,
+.Input-G,
+.count-G,
+.Time-G,
+.counters-N,
+.Group-S,
+.Inputs-GB,
+.counter-T,
+.Logins-B,
+.Student-T,
+.completed-T,
+.Data-G {
+    background-color: rgb(255, 240, 221);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    cursor: pointer;
+    color: orangered;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.Input-G input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.Inputs-GB input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.Input-G ::placeholder {
+    color: orangered;
+}
+
+.count-G h2 {
+    color: orangered;
+}
+
+.counters-N h2 {
+    color: orangered;
+}
+
+span {
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 240, 221);
+}
+
+.Input-G p {
+    color: orangered;
+}
+
+.Time-G p {
+    background-color: orangered;
+    color: rgb(255, 240, 221);
+    padding: 10px;
+    font-size: 16px;
+}
+
+.Inputs-GB p {
+    background-color: orangered;
+    color: rgb(255, 240, 221);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+::selection {
+    background-color: orangered;
+    color: rgb(255, 240, 221);
+    padding: 10px;
+}
+
+.title-h1 {
+    text-align: center;
+    color: rgb(255, 240, 221);
+    text-decoration: underline;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.counter-T h2 {
+    color: orangered;
+}
+
+
+/* Section B — Short Answer Questions */
+.List-G,
+.List-L,
+.Key-T,
+.Logical-D,
+.Status-A {
+    background-color: rgb(255, 240, 221);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.List-G p {
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 240, 221);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.List-L h2 {
+    color: orangered;
+}
+
+.Available {
+    background-color: rgb(186, 252, 186);
+    color: green;
+    border: 2px solid green;
+    padding: 5px;
+    display: inline;
+}
+
+.Status-A li {
+    color: rgb(255, 240, 221);
+    background-color: orangered;
+    padding: 10px;
+    display: inline;
+    border-radius: 10px;
+}
+
+.Student-T .ul-cards {
+    display: flex;
+    gap: 30px;
+    border: 2px solid orangered;
+    list-style-type: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ul-cards .cards {
+    background-color: orangered;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 240, 221);
+}
+
+.completed-T ul {
+    color: orangered;
+}
+
+.title-two {
+    font-size: 25px;
+}
+
+.Data-G {
+    text-align: center;
+}
+
+.Data-G .ul-cards {
+    display: flex;
+    border: 2px solid orangered;
+    list-style-type: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Data-G .ul-cards .cards {
+    background-color: orangered;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 240, 221);
+}
+
+.title-h1 {
+    font-size: 30px;
+}
+
+
+
+
+
+/* <h1 className="title-h1">Section B — Short Answer Questions</h1> */
+
+input, textarea{
+    width:300px;
+    padding:10px 0;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    margin:5px 0;
+    background-color:#FFF0DD;
+}
+select{
+    color:orangered;
+}
+::placeholder{
+    color:orangered;
+    padding: 0 15px;
+}
+label{
+    color:orangered;
+    font-weight: 700;
+}
+.control-G,
+.default-I, 
+.Event-T,
+.Multiple-O,
+.Email-S,
+.contact-G,
+.Registration-G,
+.count-T,
+.Registration-Gs{
+    background-color: rgb(255, 240, 221);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.input-name label{
+    font-size: 20px;
+}
+
+.input-name input, select{
+    width:100%;
+    padding:15px 0;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    margin:15px 0;
+    background-color:#FFF0DD;
+}
+
+select {
+    padding: 15px;
+}
+.Registration-Gs h1{
+    text-align: center;
+    color: orangered;
+}
+
+.text-name{
+    background-color: orangered;
+    color:#FFF0DD;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.text-green{
+    background-color: rgb(175, 255, 185);
+    color:green;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid green;
+}
